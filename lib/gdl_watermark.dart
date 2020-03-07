@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 /// A Calculator.
 class FlutterGdl {
 
-  Widget showBottomWatermark(){
+  static Widget showBottomWatermark(){
     return Column(
       children: <Widget>[
         Row(
@@ -33,11 +33,12 @@ class FlutterGdl {
 
   }
 
-  Widget _heart({double width = 20, double height = 20}) {
+  static Widget _heart({double width = 20, double height = 20}) {
     return Image.asset(
       "assets/corazon.png",
       width: width,
       height: height,
+      package: "gdl_watermark",
     );
   }
 
