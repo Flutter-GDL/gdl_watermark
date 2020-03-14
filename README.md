@@ -1,19 +1,19 @@
 # gdl_watermark
 Note: 
 SAMPLES FROM THIS REPO ARE SANDBOX LEARNING TOOLS FOR THE FLUTTER GUADALAJARA MEETUP. 
-AS SUCH THE CODE AND COMMENTS WILL BE IN SPANISH IN SOME CASES
+AS SUCH, THE CODE AND COMMENTS WILL BE IN SPANISH IN SEVERAL CASES
 
 Hola a todos!
 
-Este es un ejemplo de un paquete para dart
-
-Esta es un paquete modular ejemplo con graficos. La diferencia entre un paquete de dart ('Dart Package') y un plugin de dart ('Dart Plugin') es que no existe codigo nativo dentro de este paquete; es decir este plugin es puro dart y en funciona en cualquier plataforma donde funcione dart! 
+Este es un ejemplo de un paquete para flutter
 
 
-[Documentación Oficial](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)
+[Documentación Oficial (English)](https://flutter.dev/docs/development/packages-and-plugins/developing-packages)
+
+[Documentación Oficial (Español)](https://flutter-es.io/docs/development/packages-and-plugins/developing-packages)
 
 
-[Un ejemplo claro que me encontre en medium](https://medium.com/flutter-community/how-to-create-publish-and-manage-flutter-packages-b4f2cd2c6b90)
+[Un ejemplo claro que me encontre en medium(English)](https://medium.com/flutter-community/how-to-create-publish-and-manage-flutter-packages-b4f2cd2c6b90)
 
 Plataformas Compatibles:
 

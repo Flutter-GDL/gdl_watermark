@@ -5,26 +5,40 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:example/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  setUpAll(() async{
+    TestWidgetsFlutterBinding.ensureInitialized();
+
+
+  });
+
+
+
+  // esto es solo un ejemplo
+  //flutter test --no-test-assets --plain-name "Verificar integridad de vista" test/widget_test.dart
+  testWidgets('View Test', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+
+    await tester.pumpWidget(MyApp());
+    expect(find.byType(Scaffold) , findsOneWidget);
+    expect(find.byType(AppBar) , findsOneWidget);
+  });
+
+  testWidgets('Sample de Paquete de gdl_watermark',
+      (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    // verificar si el widget basico de texto existe
+    expect(find.text('Hello Everybody!'), findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
   });
 }

@@ -1,6 +1,6 @@
 name: gdl_watermark
 description: Flutter_GDL Package to display the logo on every meetup sample
-version: 0.0.1
+version: 0.1.0
 author: The Flutter Guadalajara meetup team
 homepage: https://github.com/Flutter-GDL/gdl_watermark
 
@@ -24,3 +24,7 @@ flutter:
     - assets/corazon.png
     - assets/mexico.png
 
+# 0.1.0
+#     Added Flex, Container Embedding and Ability to disable 20 px bottom padding (sizeBox)
+
+# 0.0.1 (initial launch)
