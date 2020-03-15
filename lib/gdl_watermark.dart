@@ -1,4 +1,3 @@
-
 library gdl_watermark;
 
 import 'package:flutter/widgets.dart';
@@ -33,7 +32,8 @@ class FlutterGdl {
     ContainerType containerType = ContainerType.none,
     bool bottomPadding = true,
   }) {
-    if (containerType == ContainerType.none) return _concreteData(bottomPadding);
+    if (containerType == ContainerType.none)
+      return _concreteData(bottomPadding);
 
     return (containerType == ContainerType.expanded)
         ? Expanded(
